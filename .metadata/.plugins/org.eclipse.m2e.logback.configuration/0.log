@@ -1,0 +1,4 @@
+2020-07-29 16:29:28,153 [Worker-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.pom
+2020-07-29 16:30:23,671 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/testng/testng/7.1.0/testng-7.1.0.pom
+2020-08-05 20:10:29,114 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/testng/testng/7.3.0/testng-7.3.0.pom
+2020-08-05 20:16:30,626 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom

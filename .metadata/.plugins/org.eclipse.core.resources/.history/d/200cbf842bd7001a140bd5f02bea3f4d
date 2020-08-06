@@ -1,0 +1,16 @@
+package com.MavenProject.test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class Sample {
+
+	@Test
+	public void test(){
+		System.setProperty("webdriver.gecko.driver", "D:\\Jagbir_Sarbjith/Jars/geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		
+		driver.get("https://google.org");
+	}
+}

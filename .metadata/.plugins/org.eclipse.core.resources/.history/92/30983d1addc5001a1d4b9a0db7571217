@@ -1,0 +1,14 @@
+package methods;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class OrgHRMMaster {
+
+	//Launch
+	public String org_Launch(){
+		System.setProperty("webdriver.gecko.driver", "D:\\Jagbir_Sarbjith/Jars/geckodriver.exe");
+		FirefoxDriver driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.selenium.dev/downloads/");
+	}
+}

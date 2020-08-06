@@ -1,0 +1,50 @@
+package methods;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class OrgHRMMaster {
+	
+	public WebDriver driver;
+	public String expval,actval;
+	//Launch
+	public String org_Launch(String URL){
+		expval="LOGIN";
+		System.setProperty("webdriver.gecko.driver", "D:\\Jagbir_Sarbjith/Jars/geckodriver.exe");
+		driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get(URL);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		actval=driver.findElement(By.id("btnLogin")).getAttribute("Value");
+		
+		if (expval.equalsIgnoreCase(actval)) {
+			return "Pass";
+		}else{
+			return "Fail";
+		}
+	}
+	//Login
+	public String org_Login(String u,String p){
+		expval="welcome";
+		driver.findElement(By.id("txtUsername")).sendKeys(u);
+		driver.findElement(By.id("txtPassword")).sendKeys(p);
+		driver.findElement(By.id("btnLogin")).click();
+		
+		actval=driver.findElement(By.partialLinkText("Welcome")).getAttribute("id");
+		
+		if (expval.equalsIgnoreCase(actval)) {
+			return "Pass";
+		}else{
+			return "Fail";
+		}
+	}
+	
+	//Employee Registration
+	public String org_EmpReg(String f,String l, String eid){
+		driver.findElement(By.linkText("PIM")).click();
+	}
+}
